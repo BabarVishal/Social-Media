@@ -11,7 +11,7 @@ app.use(express.static('uploads'));
 
 app.use(cors(
   {
-    origin: ["https://social-media-zo1e.vercel.app"],
+    origin: ["https://social-media-fr.vercel.app/"],
     methods:["POST", "GET"],
     credentials:true
   }
