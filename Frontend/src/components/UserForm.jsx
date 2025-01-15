@@ -19,7 +19,7 @@ const UserForm = () => {
     }
 
     try {
-      await axios.post('https://social-media-crnb.vercel.app/submit', formData);
+      await axios.post('https://social-media-d1af.vercel.app/submit', formData);
       alert('Submission successful!');
       navigate('/dashboard');  // Navigate to the Admin Dashboard
     } catch (error) {
