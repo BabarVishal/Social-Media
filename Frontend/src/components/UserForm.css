@@ -1,0 +1,85 @@
+/* UserForm.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .user-form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .user-form input[type="text"],
+  .user-form input[type="file"],
+  .user-form button {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .user-form input[type="text"]:focus,
+  .user-form input[type="file"]:focus,
+  .user-form button:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(108, 99, 255, 0.5);
+  }
+  
+  .user-form input[type="file"] {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .user-form button {
+    background-color: #6c63ff;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-form button:hover {
+    background-color: #554bcc;
+  }
+  
+  .user-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .user-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  @media (max-width: 480px) {
+    .user-form {
+      padding: 15px 20px;
+    }
+  
+    .user-form input[type="text"],
+    .user-form input[type="file"],
+    .user-form button {
+      font-size: 12px;
+    }
+  }
+  
+  

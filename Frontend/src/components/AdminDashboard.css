@@ -1,0 +1,105 @@
+/* AdminDashboard.css */
+.admin-dashboard {
+   
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  .admin-dashboard h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .user-card {
+    
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .user-card p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .images-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .images-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .admin-dashboard h1 {
+      font-size: 2rem;
+    }
+  
+    .user-card {
+      padding: 15px;
+    }
+  
+    .user-card h2 {
+      font-size: 1.5rem;
+    }
+  
+    .images-container img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .admin-dashboard h1 {
+      font-size: 1.5rem;
+    }
+  
+    .user-card h2 {
+      font-size: 1.2rem;
+    }
+  
+    .user-card p {
+      font-size: 0.9rem;
+    }
+  
+    .images-container img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  
