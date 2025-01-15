@@ -9,6 +9,14 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('uploads'));
 
+app.use(cors(
+  {
+    origin: ["https://social-media-oylt.vercel.app/"],
+    methods:["POST", "GET"],
+    credentials:true
+  }
+  ));
+
 // MongoDB connection
 mongoose.connect('mongodb://localhost:27017/socialMediaTask', {
   useNewUrlParser: true,
